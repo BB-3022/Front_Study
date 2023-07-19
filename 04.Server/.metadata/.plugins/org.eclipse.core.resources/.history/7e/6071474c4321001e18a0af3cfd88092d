@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		data를 전송하기 위한 방법은 총 2가지가 존재한다.
+		Do Get 방식, Do Post 방식
+	 -->
+	 <!-- Get 방식으로 데이터 전달하기 -->
+	 <fieldset> <!-- 테두리 설정 -->
+	 	<legend>Get방식</legend>
+	 	
+	 	<form action="Ex06GetPost" method="get"> <!-- 주소 : Ex06GetPost로 데이터 전송, get 방식으로 -->
+	 		<input type="text" name="get">
+	 		<input type="submit"> <!-- submit 버튼을 눌렀을 때 전송 -->
+	 	</form>
+	 </fieldset>
+</body>
+</html>

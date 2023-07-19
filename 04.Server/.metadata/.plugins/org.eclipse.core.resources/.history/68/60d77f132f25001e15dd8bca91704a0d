@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		
+		<%
+		int cc = Integer.parseInt(request.getParameter("c"));
+		int rr = Integer.parseInt(request.getParameter("r"));
+		
+		for(int i=0;i<cc;i++){
+			out.print("<tr>"+i+"</tr>");
+			for(int j=0;j<rr;j++){
+				out.print("<td>"+j+"</td>");
+			}
+		}
+		
+		%>
+		
+	</table>
+</body>
+</html>

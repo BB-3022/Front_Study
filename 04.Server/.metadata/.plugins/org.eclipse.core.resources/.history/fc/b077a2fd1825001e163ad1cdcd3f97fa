@@ -1,0 +1,8 @@
+package com.model;
+
+public class coffeeDTO {
+
+	public String getMunuNm(){
+		return menuNm;
+	}
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="result-area"></div>
+	<button id="req-btn">데이터전송</button>
+	
+	<script src="./js/jquery-3.7.0.js"></script>
+	<script>
+	
+	$("#req-btn").on("click",function(){
+		$.ajax({
+			url:"",
+			success:function(res){
+				console.log(res);			
+			},
+			error:function(){
+				alert("요청 실패");
+			}
+		})
+	})
+	
+	
+	
+	
+	</script>
+</body>
+</html>

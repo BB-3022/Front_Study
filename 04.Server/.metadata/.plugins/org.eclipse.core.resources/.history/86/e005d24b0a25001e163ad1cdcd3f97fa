@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="result-area"></div>
+	<button id="req-btn">데이터전송</button>
+	
+	<script src="./js/jquery-3.7.0.js"></script>
+	<script>
+	//버튼을 클릭했을 때 동작하는 이벤트 구현
+	// ajax() 함수구현
+	
+	$("#req-btn").on("click",function(){
+		$.ajax({
+			url:"GSON",
+			success:function(res){
+				console.log("응답받은 데이터 :",res)
+				
+				let obj = JSON.parse(res);
+				console.log(obj);
+			},
+			error:function(){
+				alert("통신연결 실패");
+			}
+		})
+	})
+	
+	
+	
+	
+	</script>
+</body>
+</html>
